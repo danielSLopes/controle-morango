@@ -24,9 +24,10 @@ import { DatePicker } from "@mui/x-date-pickers/DatePicker";
 import "dayjs/locale/pt-br";
 import dayjs from "dayjs";
 import { GlobalContext } from "../globalContext";
+const apiKeyFirebase = process.env.REACT_APP_API_URL;
 
 const firebaseConfig = initializeApp({
-  apiKey: "AIzaSyCcfCSB7z-BuipKfrPrSbMx27M1XTTIpKU",
+  apiKey: apiKeyFirebase,
   authDomain: "controle-morango.firebaseapp.com",
   projectId: "controle-morango",
   storageBucket: "controle-morango.firebasestorage.app",
